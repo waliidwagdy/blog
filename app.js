@@ -23,7 +23,7 @@ const swaggerDefinition = {
     },
     servers: [
         {
-            url: 'https://protected-wave-70539.herokuapp.com/',
+            url: 'https://whispering-escarpment-67172.herokuapp.com/',
             description: 'Production server',
         },
     ],
@@ -62,7 +62,7 @@ const fileFilter = (req, file, cb) => {
     }
 };
 
-const DB_URI = 'mongodb+srv://walid:walid@cluster0.xi3um.mongodb.net/imaging?retryWrites=true&w=majority';
+const DB_URI = 'mongodb+srv://<user>:<password>@cluster0.xi3um.mongodb.net/imaging?retryWrites=true&w=majority';
 
 app.use(express.json());    // application/json
 app.use(
